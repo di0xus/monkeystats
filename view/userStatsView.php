@@ -18,7 +18,11 @@
         <?php else: ?>
             <div class="profile-header">
                 <div class="avatar">
-                    <?= strtoupper(substr($userStats['name'], 0, 1)) ?>
+                    <?php if ($userStats['discord_name'] && $userStats['discord_avatar']): ?>
+                        <img src="https://cdn.discordapp.com/avatars/<?= $userStats['discord_name'] ?>/<?= $userStats['discord_avatar'] ?>.png" alt="Avatar">
+                    <?php else: ?>
+                        <?= strtoupper(substr($userStats['name'], 0, 1)) ?>
+                    <?php endif; ?>
                 </div>
                 <div class="user-details">
                     <h1><?= htmlspecialchars($userStats['name']) ?></h1>

@@ -53,6 +53,7 @@ class UserModel {
                         'xp' => $p['xp'] ?? 0,
                         'level' => isset($p['xp']) ? max(1, floor(sqrt($p['xp']) / 5)) : 1,
                         'discord_name' => $p['discordId'] ?? null,
+                        'discord_avatar' => $p['discordAvatar'] ?? null,
                         'badge_id' => $p['badgeId'] ?? null
                     ];
 
@@ -67,15 +68,17 @@ class UserModel {
     }
 
     private function saveUser($s) {
-        $sql = "INSERT INTO Users (name, tests_completed, time_typing, wpm_15, acc_15, wpm_60, acc_60, xp, level, discord_name, badge_id) 
-                VALUES (:name, :tests, :time, :w15, :a15, :w60, :a60, :xp, :lvl, :disc, :badge) 
+        $sql = "INSERT INTO Users (name, tests_completed, time_typing, wpm_15, acc_15, wpm_60, acc_60, xp, level, discord_name, discord_avatar, badge_id) 
+                VALUES (:name, :tests, :time, :w15, :a15, :w60, :a60, :xp, :lvl, :disc, :avatar, :badge) 
                 ON DUPLICATE KEY UPDATE 
                     tests_completed = :tests, 
                     time_typing = :time, 
                     wpm_15 = :w15, acc_15 = :a15, 
                     wpm_60 = :w60, acc_60 = :a60,
                     xp = :xp, level = :lvl,
-                    discord_name = :disc, badge_id = :badge,
+                    discord_name = :disc, 
+                    discord_avatar = :avatar,
+                    badge_id = :badge,
                     last_updated = CURRENT_TIMESTAMP";
         $stmt = $this->db->prepare($sql);
         $stmt->execute([
@@ -89,6 +92,7 @@ class UserModel {
             'xp' => $s['xp'],
             'lvl' => $s['level'],
             'disc' => $s['discord_name'],
+            'avatar' => $s['discord_avatar'],
             'badge' => $s['badge_id']
         ]);
     }
