@@ -33,16 +33,16 @@ Ce projet a été réalisé dans le cadre de la **SAE 203** (département MMI). 
 ├── css/
 │   ├── home.css
 │   ├── leaderboard.css
-│   └── user.css                 # Feuilles de style séparées
+│   └── user.css                 # css
 ├── model/
 │   ├── LeaderboardModel.php
 │   └── UserModel.php            # Requêtes API (cURL) et requêtes SQL (INSERT/UPDATE/SELECT)
 ├── view/
 │   ├── homeView.php
 │   ├── leaderboardView.php
-│   └── userStatsView.php        # Affichage pur (aucun traitement de données)
+│   └── userStatsView.php        # Affichage 
 ├── database.sql                 # Script de création des tables
-└── index.php                    # Point d'entrée unique (Routeur)
+└── index.php                    # Point d'entrée 
 ```
 
 ---
