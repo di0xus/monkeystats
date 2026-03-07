@@ -43,7 +43,7 @@
                 </tbody>
             </table>
         <?php else: ?>
-            <p style="text-align:center; color:#646669;">Leaderboard is empty or loading failed.</p>
+            <p style="text-align:center; color:#646669;"> Le leaderboard est vide ou le chargement echoue.</p>
         <?php endif; ?>
 
         <div class="nav">
