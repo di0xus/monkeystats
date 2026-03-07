@@ -12,17 +12,17 @@
         
         <form action="index.php" method="GET">
             <input type="hidden" name="action" value="search">
-            <input type="text" name="username" list="names" placeholder="enter username..." autocomplete="off" required autofocus>
+            <input type="text" name="username" list="names" placeholder="entrer un username..." autocomplete="off" required autofocus>
             <datalist id="names">
                 <?php foreach ($suggestions as $name): ?>
                     <option value="<?= htmlspecialchars($name) ?>">
                 <?php endforeach; ?>
             </datalist>
-            <button type="submit">search</button>
+            <button type="submit">chercher</button>
         </form>
         
         <div class="links">
-            <a href="index.php?action=leaderboard">voir le global leaderboard</a>
+            <a href="index.php?action=leaderboard">voir le leaderboard</a>
         </div>
     </div>
 </body>
