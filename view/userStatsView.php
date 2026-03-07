@@ -18,8 +18,12 @@
         <?php else: ?>
             <div class="profile-header">
                 <div class="avatar">
-                    <?php if ($userStats['discord_name'] && $userStats['discord_avatar']): ?>
-                        <img src="https://cdn.discordapp.com/avatars/<?= $userStats['discord_name'] ?>/<?= $userStats['discord_avatar'] ?>.png" alt="Avatar">
+                    <?php if ($userStats['discord_name']): ?>
+                        <?php if ($userStats['discord_avatar']): ?>
+                            <img src="https://cdn.discordapp.com/avatars/<?= $userStats['discord_name'] ?>/<?= $userStats['discord_avatar'] ?>.png" alt="Avatar">
+                        <?php else: ?>
+                            <img src="https://cdn.discordapp.com/embed/avatars/<?= ($userStats['discord_name'] >> 22) % 6 ?>.png" alt="Default Avatar">
+                        <?php endif; ?>
                     <?php else: ?>
                         <?= strtoupper(substr($userStats['name'], 0, 1)) ?>
                     <?php endif; ?>
