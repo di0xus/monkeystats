@@ -1,7 +1,5 @@
 # 🐒 MonkeyStats - Projet SAE 203
 
-**Création de Site Web avec Données Publiques et Application du Modèle MVC**
-
 Ce projet a été réalisé dans le cadre de la **SAE 203** (département MMI). Il s'agit d'une application web développée en **PHP natif** respectant strictement l'architecture **MVC (Modèle-Vue-Contrôleur)**. Elle exploite l'API de [Monkeytype](https://monkeytype.com) pour afficher et sauvegarder des statistiques de frappe au clavier.
 
 ---
@@ -60,7 +58,7 @@ Ce projet a été réalisé dans le cadre de la **SAE 203** (département MMI). 
 
 1. **Cloner le dépôt :**
    ```bash
-   git clone https://github.com/snowflakid/monkeystats.git
+   git clone https://github.com/di0xus/monkeystats.git
    cd monkeystats
    ```
 
