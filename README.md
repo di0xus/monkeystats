@@ -60,7 +60,7 @@ Ce projet a été réalisé dans le cadre de la **SAE 203** (département MMI). 
 
 1. **Cloner le dépôt :**
    ```bash
-   git clone https://github.com/snowflakid/nonkeystats.git
+   git clone https://github.com/snowflakid/monkeystats.git
    cd monkeystats
    ```
 
