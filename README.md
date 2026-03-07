@@ -1,4 +1,4 @@
-# 🐒 MonkeyStats - Projet SAE 203
+# 🐒 MonkeyStats
 
 **Création de Site Web avec Données Publiques et Application du Modèle MVC**
 
@@ -10,7 +10,7 @@ Ce projet a été réalisé dans le cadre de la **SAE 203** (département MMI). 
 
 - **Recherche de Profils :** Consultez les statistiques détaillées (Tests complétés, Temps de frappe, XP, Niveau calculé dynamiquement) de n'importe quel joueur.
 - **Records Personnels (PB) :** Affichage des meilleurs scores (WPM et Précision) pour les modes 15s et 60s.
-- **Leaderboard Global :** Naviguez à travers le top 50 mondial directement depuis le site (filtrage par mode de temps).
+- **Leaderboard :** Naviguez à travers le top 50 mondial directement depuis le site (filtrage par mode de temps).
 - **Système de Cache SQL (Exigence SAE) :** Afin de respecter les consignes d'utilisation des données et d'optimiser les performances, chaque recherche déclenche une sauvegarde immédiate dans une base de données MySQL. Si le profil est recherché à nouveau dans les 10 minutes, les données sont lues localement via la BDD sans solliciter l'API externe.
 
 ---
@@ -20,7 +20,7 @@ Ce projet a été réalisé dans le cadre de la **SAE 203** (département MMI). 
 - **Backend :** PHP (Routeur frontal `index.php`).
 - **Base de données :** MySQL / MariaDB.
 - **Sécurité :** Utilisation exclusive de **PDO** avec requêtes préparées (`prepare()`, `execute()`) pour bloquer les injections SQL.
-- **Frontend :** HTML5 & CSS3 natif (Design "Glassmorphism / Dark" inspiré de l'UI officielle de Monkeytype, séparation stricte du CSS).
+- **Frontend :** HTML5 & CSS3 natif.
 - **Modèle de conception :** MVC complet.
 
 ### Arborescence
@@ -60,7 +60,7 @@ Ce projet a été réalisé dans le cadre de la **SAE 203** (département MMI). 
 
 1. **Cloner le dépôt :**
    ```bash
-   git clone https://github.com/snowflakid/monkeystats.git
+   git clone https://github.com/di0xus/monkeystats.git
    cd monkeystats
    ```
 
