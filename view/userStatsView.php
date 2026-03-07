@@ -40,7 +40,7 @@
             <div class="group-title">Statistiques</div>
             <div class="stats-grid">
                 <div class="stat-item">
-                    <span class="stat-label">tests started</span>
+                    <span class="stat-label">tests completed</span>
                     <span class="stat-val"><?= number_format($userStats['tests_completed'] ?? 0) ?></span>
                 </div>
                 <div class="stat-item">
