@@ -18,8 +18,7 @@ Ce projet a été réalisé dans le cadre de la **SAE 203** (département MMI). 
 - **Backend :** PHP (Routeur frontal `index.php`).
 - **Base de données :** MySQL / MariaDB.
 - **Sécurité :** Utilisation exclusive de **PDO** avec requêtes préparées (`prepare()`, `execute()`) pour bloquer les injections SQL.
-- **Frontend :** HTML5 & CSS3 natif.
-- **Modèle de conception :** MVC complet.
+- **Frontend :** HTML & CSS natif.
 
 ### Arborescence
 
