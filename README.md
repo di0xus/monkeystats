@@ -50,7 +50,7 @@ Ce projet a été réalisé dans le cadre de la **SAE 203** (département MMI). 
 ## 🚀 Installation & Déploiement
 
 ### Prérequis
-- Un serveur web (Apache / Nginx / PHP Built-in server)
+- Un serveur web (Apache / Nginx)
 - PHP 8.0+ avec l'extension `pdo_mysql`
 - MySQL ou MariaDB
 
