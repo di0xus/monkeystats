@@ -20,7 +20,7 @@
                 <div class="avatar">
                     <?php if ($userStats['discord_name']): ?>
                         <?php if ($userStats['discord_avatar']): ?>
-                            <img src="https://cdn.discordapp.com/avatars/<?= $userStats['discord_name'] ?>/<?= $userStats['discord_avatar'] ?>.png" alt="Avatar">
+                            <img src="https://cdn.discordapp.com/avatars/<?= $userStats['discord_name'] ?>/<?= $userStats['discord_avatar'] ?>.png?size=256" alt="Avatar">
                         <?php else: ?>
                             <img src="https://cdn.discordapp.com/embed/avatars/<?= ($userStats['discord_name'] >> 22) % 6 ?>.png" alt="Default Avatar">
                         <?php endif; ?>
