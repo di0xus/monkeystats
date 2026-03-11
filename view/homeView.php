@@ -12,7 +12,7 @@
         
         <form action="index.php" method="GET">
             <input type="hidden" name="action" value="search">
-            <input type="text" name="username" list="names" placeholder="entrer un username..." autocomplete="off" required autofocus>
+            <input type="text" name="username" list="names" placeholder="entrer un pseudo" autocomplete="off" required autofocus>
             <datalist id="names">
                 <?php foreach ($suggestions as $name): ?>
                     <option value="<?= htmlspecialchars($name) ?>">
