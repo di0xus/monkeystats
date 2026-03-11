@@ -66,7 +66,6 @@ Ce projet a été réalisé dans le cadre de la **SAE 203** (département MMI). 
    ```bash
    mysql -u root -p < database.sql
    ```
-   *(Assurez-vous de créer un utilisateur MySQL dédié avec les droits sur `sae203_db` pour des raisons de sécurité).*
 
 3. **Configurer les identifiants :**
    Éditez le fichier `config/database.php` pour y insérer vos identifiants SQL locaux et votre `ApeKey` Monkeytype.
