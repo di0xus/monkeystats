@@ -5,7 +5,7 @@ $user = 'sae';
 $pass = 'dorian';
 $charset = 'utf8mb4';
 
-define('MONKEYTYPE_APE_KEY', 'NjlhYzAyODhhYjBmY2E5YzlkM2FjNzg3LmJwbWlMTVpQdFBWLWFFTzIyd1VibURDblVGbzNtT2tF');
+define('MONKEYTYPE_APE_KEY', 'votre_cle_api');
 
 $dsn = "mysql:host=$host;dbname=$db;charset=$charset";
 
