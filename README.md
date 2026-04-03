@@ -25,7 +25,8 @@ Ce projet a été réalisé dans le cadre de la **SAE 203** (département MMI). 
 ```text
 /projet
 ├── config/
-│   └── database.php             # Identifiants PDO et clé API (ApeKey)
+│   ├── database.example.php     # Modèle de configuration (à copier)
+│   └── database.php             # Identifiants PDO et clé API — gitignorée, à créer localement
 ├── controller/
 │   ├── LeaderboardController.php
 │   └── UserController.php       # Fait le lien entre la saisie utilisateur et les modèles
@@ -68,14 +69,11 @@ Ce projet a été réalisé dans le cadre de la **SAE 203** (département MMI). 
    ```
 
 3. **Configurer les identifiants :**
-   Éditez le fichier `config/database.php` pour y insérer vos identifiants SQL locaux et votre `ApeKey` Monkeytype.
-   ```php
-   $host = 'localhost';
-   $db = 'sae203_db';
-   $user = 'votre_utilisateur';
-   $pass = 'votre_mot_de_passe';
-   define('MONKEYTYPE_APE_KEY', 'votre_cle_api_ici');
+   Le fichier `config/database.php` n'est pas versionné (gitignorée) car il contient des credentials. Un modèle est fourni :
+   ```bash
+   cp config/database.example.php config/database.php
    ```
+   Puis éditer `config/database.php` avec vos identifiants MariaDB et votre [ApeKey Monkeytype](https://monkeytype.com/settings#apeKey).
 
 4. **Lancer l'application :**
    En développement local, vous pouvez utiliser le serveur interne de PHP :
